@@ -16,5 +16,38 @@ namespace ZooTest
 
             Assert.Equal("Eukaryota", simba.Domain);
         }
+
+        /// <summary>
+        /// Check if abstract method has been overridden
+        /// </summary>
+        [Fact]
+        public void AbstractMethodsHaveBeenOverridden()
+        {
+            Lion simba = new Lion();
+
+            Assert.Equal("meat", simba.Nutrition());
+        }
+
+        /// <summary>
+        /// check that non overridden virtual methods return default value, null
+        /// </summary>
+        [Fact]
+        public void VirtualMethodsRetainVaueWhenNotOverridden()
+        {
+            Ostrich matilda = new Ostrich();
+
+            Assert.Null(matilda.Sound());
+        }
+
+        /// <summary>
+        /// Check that virtual methods, once overridden, return the overridden value
+        /// </summary>
+        [Fact]
+        public void VirtualMethodsCanBeOverridden()
+        {
+            Eagle baldie = new Eagle();
+            Assert.Equal("Screech!", baldie.Sound());
+
+        }
     }
 }
