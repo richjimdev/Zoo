@@ -19,5 +19,10 @@ namespace Zoo.Classes
         {
             return "rodents";
         }
+
+        public override string Sound()
+        {
+            return "Screech!";
+        }
     }
 }
