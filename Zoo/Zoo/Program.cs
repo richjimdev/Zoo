@@ -17,7 +17,6 @@ namespace Zoo
             Eagle baldie = new Eagle();
             Ostrich matilda = new Ostrich();
 
-
             Console.WriteLine("A lion says: " + mufasa.Sound());
             Console.WriteLine("An eagle says: " + baldie.Sound());
             Console.WriteLine($"An ostrich can lay an average of {matilda.AverageEggsLaid()} eggs.");

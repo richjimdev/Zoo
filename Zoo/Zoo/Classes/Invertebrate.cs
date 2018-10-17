@@ -9,6 +9,7 @@ namespace Zoo.Classes
     /// </summary>
     public abstract class Invertebrate : Animal
     {
+        //overriding abstract method derrived from parent
         public override bool Spine { get; set; } = false;
     }
 }
