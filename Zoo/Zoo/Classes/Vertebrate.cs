@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    //Inherited from Animal, base class to more abstract classes
+    /// <summary>
+    /// Inherited from Animal, base class to more abstract classes
+    /// </summary>
     public abstract class Vertebrate : Animal
     {
         //Creating new abstract property
@@ -18,5 +21,6 @@ namespace Zoo.Classes
 
         //Overriding parent abstract property
         public override bool Spine { get; set; } = true;
+
     }
 }

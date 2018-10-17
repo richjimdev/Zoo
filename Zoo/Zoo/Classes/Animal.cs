@@ -9,13 +9,13 @@ namespace Zoo.Classes
     /// </summary>
     public abstract class Animal
     {
-        //Regular Property
+        //New regular Property
         public string Domain { get; set; } = "Eukaryota";
 
-        //Abstract method
+        //New abstract method
         public abstract string Nutrition();
 
-        //Abstract property
+        //New abstract property
         public abstract bool Spine { get; set; }
     }
     
