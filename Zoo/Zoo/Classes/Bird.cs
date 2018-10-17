@@ -8,12 +8,15 @@ namespace Zoo.Classes
     /// <summary>
     /// Abstract class derrived from Vertebrate class
     /// </summary>
-    public abstract class Bird : Vertebrate, ICanFly
+    public abstract class Bird : Vertebrate, ICanFly, ILayEggs
     {
         //Override abstract property
         public override string Blood { get; set; }
 
-        //Implementing properties and methods from our Interface
+        //Creating new abstract method for children classes to override
+        public abstract int AverageEggsLaid();
+
+        //Implementing properties and methods from our Interfaces
         public string Fly()
         {
             return "I can fly!";
@@ -21,7 +24,9 @@ namespace Zoo.Classes
 
         public bool wings { get; set; } = true;
 
-        //Creating new abstract method for children classes to override
-        public abstract int AverageEggsLaid();
+        public bool layEggs()
+        {
+            return true;
+        }
     }
 }
