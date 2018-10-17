@@ -9,4 +9,4 @@ The bird class gets both of these interfaces, which means all birds (pretending 
 Other animals, like bees also got the ICanFly interface, and animals like crustaceans for the ILayEggs interface.
 
 ## Diagram
-![](diagram.JPG)
+![](diagram.jpg)
