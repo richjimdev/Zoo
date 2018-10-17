@@ -47,7 +47,17 @@ namespace ZooTest
         {
             Eagle baldie = new Eagle();
             Assert.Equal("Screech!", baldie.Sound());
+        }
 
+        /// <summary>
+        /// Prove that interfaces are being implemented properly
+        /// </summary>
+        [Fact]
+        public void InterfacesAreImplementedProperly()
+        {
+            HoneyBee barry = new HoneyBee();
+
+            Assert.True(barry.wings);
         }
     }
 }
