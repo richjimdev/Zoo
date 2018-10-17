@@ -10,6 +10,6 @@ namespace Zoo.Interfaces
     interface ILayEggs
     {
         //Property that animals that lay eggs will need to implement
-        bool layEggs();
+        bool LayEggs();
     }
 }

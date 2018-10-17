@@ -24,7 +24,7 @@ namespace Zoo.Classes
 
         public bool wings { get; set; } = true;
 
-        public bool layEggs()
+        public bool LayEggs()
         {
             return true;
         }
